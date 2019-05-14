@@ -20,6 +20,20 @@
 		E4CBBDE0228B68D000E611AB /* XCDYouTubeVideoPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CBBDD4228B68D000E611AB /* XCDYouTubeVideoPlayerViewController.m */; };
 		E4CBBDE1228B68D000E611AB /* XCDYouTubeClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CBBDD5228B68D000E611AB /* XCDYouTubeClient.m */; };
 		E4CBBDE2228B68D000E611AB /* XMLHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CBBDD8228B68D000E611AB /* XMLHTTPRequest.m */; };
+		E4CBBE47228B6ED200E611AB /* XCDYouTubeClient.h in Sources */ = {isa = PBXBuildFile; fileRef = E4CBBDC6228B68D000E611AB /* XCDYouTubeClient.h */; };
+		E4CBBE48228B6ED200E611AB /* XCDYouTubeVideoPlayerViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = E4CBBDC7228B68D000E611AB /* XCDYouTubeVideoPlayerViewController.h */; };
+		E4CBBE49228B6ED200E611AB /* XCDYouTubeLogger+Private.h in Sources */ = {isa = PBXBuildFile; fileRef = E4CBBDC8228B68D000E611AB /* XCDYouTubeLogger+Private.h */; };
+		E4CBBE4A228B6ED200E611AB /* XCDYouTubeError.h in Sources */ = {isa = PBXBuildFile; fileRef = E4CBBDC9228B68D000E611AB /* XCDYouTubeError.h */; };
+		E4CBBE4B228B6ED200E611AB /* XCDYouTubeVideo+Private.h in Sources */ = {isa = PBXBuildFile; fileRef = E4CBBDCB228B68D000E611AB /* XCDYouTubeVideo+Private.h */; };
+		E4CBBE4C228B6ED200E611AB /* XMLHTTPRequest.h in Sources */ = {isa = PBXBuildFile; fileRef = E4CBBDCC228B68D000E611AB /* XMLHTTPRequest.h */; };
+		E4CBBE4D228B6ED200E611AB /* XCDYouTubeOperation.h in Sources */ = {isa = PBXBuildFile; fileRef = E4CBBDCF228B68D000E611AB /* XCDYouTubeOperation.h */; };
+		E4CBBE4E228B6ED200E611AB /* XCDYouTubeVideo.h in Sources */ = {isa = PBXBuildFile; fileRef = E4CBBDD0228B68D000E611AB /* XCDYouTubeVideo.h */; };
+		E4CBBE4F228B6ED200E611AB /* XCDYouTubeDashManifestXML.h in Sources */ = {isa = PBXBuildFile; fileRef = E4CBBDD1228B68D000E611AB /* XCDYouTubeDashManifestXML.h */; };
+		E4CBBE50228B6ED200E611AB /* XCDYouTubeVideoOperation.h in Sources */ = {isa = PBXBuildFile; fileRef = E4CBBDD2228B68D000E611AB /* XCDYouTubeVideoOperation.h */; };
+		E4CBBE51228B6ED200E611AB /* XCDYouTubeKit.h in Sources */ = {isa = PBXBuildFile; fileRef = E4CBBDD3228B68D000E611AB /* XCDYouTubeKit.h */; };
+		E4CBBE52228B6ED200E611AB /* XCDYouTubePlayerScript.h in Sources */ = {isa = PBXBuildFile; fileRef = E4CBBDD6228B68D000E611AB /* XCDYouTubePlayerScript.h */; };
+		E4CBBE53228B6ED200E611AB /* XCDYouTubeLogger.h in Sources */ = {isa = PBXBuildFile; fileRef = E4CBBDD7228B68D000E611AB /* XCDYouTubeLogger.h */; };
+		E4CBBE54228B6ED200E611AB /* XCDYouTubeVideoWebpage.h in Sources */ = {isa = PBXBuildFile; fileRef = E4CBBDD9228B68D000E611AB /* XCDYouTubeVideoWebpage.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -207,6 +221,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4CBBE47228B6ED200E611AB /* XCDYouTubeClient.h in Sources */,
+				E4CBBE48228B6ED200E611AB /* XCDYouTubeVideoPlayerViewController.h in Sources */,
+				E4CBBE49228B6ED200E611AB /* XCDYouTubeLogger+Private.h in Sources */,
+				E4CBBE4A228B6ED200E611AB /* XCDYouTubeError.h in Sources */,
+				E4CBBE4B228B6ED200E611AB /* XCDYouTubeVideo+Private.h in Sources */,
+				E4CBBE4C228B6ED200E611AB /* XMLHTTPRequest.h in Sources */,
+				E4CBBE4D228B6ED200E611AB /* XCDYouTubeOperation.h in Sources */,
+				E4CBBE4E228B6ED200E611AB /* XCDYouTubeVideo.h in Sources */,
+				E4CBBE4F228B6ED200E611AB /* XCDYouTubeDashManifestXML.h in Sources */,
+				E4CBBE50228B6ED200E611AB /* XCDYouTubeVideoOperation.h in Sources */,
+				E4CBBE51228B6ED200E611AB /* XCDYouTubeKit.h in Sources */,
+				E4CBBE52228B6ED200E611AB /* XCDYouTubePlayerScript.h in Sources */,
+				E4CBBE53228B6ED200E611AB /* XCDYouTubeLogger.h in Sources */,
+				E4CBBE54228B6ED200E611AB /* XCDYouTubeVideoWebpage.h in Sources */,
 				E4CBBDDC228B68D000E611AB /* XCDYouTubeVideo.m in Sources */,
 				E4CBBDDD228B68D000E611AB /* XCDYouTubeVideoWebpage.m in Sources */,
 				E4CBBDDA228B68D000E611AB /* XCDYouTubeVideoOperation.m in Sources */,

@@ -2,9 +2,10 @@
 //  Copyright (c) 2013-2016 Cédric Luthi. All rights reserved.
 //
 
-#import <XCDYouTubeKit/XCDYouTubeVideo.h>
+#import "XCDYouTubeVideo.h"
 
 #import "XCDYouTubePlayerScript.h"
+
 
 #define XCDYouTubeErrorUseCipherSignature -1000
 
