@@ -3,6 +3,8 @@ import { NativeModules } from 'react-native';
 
 const { YouTubeStandalone } = NativeModules;
 
+console.log("log");
+
 export const YouTubeStandaloneIOS = !YouTubeStandalone
   ? null
   : {
