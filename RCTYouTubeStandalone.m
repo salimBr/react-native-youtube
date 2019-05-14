@@ -1,8 +1,8 @@
 #import "RCTYouTubeStandalone.h"
-#if __has_include(<XCDYouTubeKit/XCDYouTubeKit.h>)
-#import <XCDYouTubeKit/XCDYouTubeKit.h>
+//#if __has_include(<XCDYouTubeKit/XCDYouTubeKit.h>)
+#import "XCDYouTubeKit.h"
 #define XCD_YOUTUBE_KIT_INSTALLED
-#endif
+//#endif
 
 @implementation RCTYouTubeStandalone {
     RCTPromiseResolveBlock resolver;
@@ -12,16 +12,20 @@
 RCT_EXPORT_MODULE();
 
 RCT_REMAP_METHOD(playVideo,
-                 playVideoWithResolver:(NSString*)videoId
+                 playVideoWithResolver:(NSDictionary*)videoInfos
                  resolver:(RCTPromiseResolveBlock)resolve
                  rejecter:(RCTPromiseRejectBlock)reject)
 {
     #ifndef XCD_YOUTUBE_KIT_INSTALLED
         reject(@"error", @"XCDYouTubeKit is not installed", nil);
     #else
+    
+    NSLog(@"token ===== %@",videoInfos);
+    
+    
         dispatch_async(dispatch_get_main_queue(), ^{
             XCDYouTubeVideoPlayerViewController *videoPlayerViewController =
-                [[XCDYouTubeVideoPlayerViewController alloc] initWithVideoIdentifier:videoId];
+                [[XCDYouTubeVideoPlayerViewController alloc] initWithVideoIdentifier:videoInfos];
             [[NSNotificationCenter defaultCenter] addObserver:self
                                                      selector:@selector(moviePlayerPlaybackDidFinish:)
                                                          name:MPMoviePlayerPlaybackDidFinishNotification
@@ -31,7 +35,8 @@ RCT_REMAP_METHOD(playVideo,
             rejecter = reject;
 
             UIViewController *root = [[[[UIApplication sharedApplication] delegate] window] rootViewController];
-            [root presentMoviePlayerViewControllerAnimated:videoPlayerViewController];
+            [root presentViewController:videoPlayerViewController animated:YES completion:^{
+            }];
         });
     #endif
 }
