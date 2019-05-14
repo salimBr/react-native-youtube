@@ -6,9 +6,9 @@ const { YouTubeStandalone } = NativeModules;
 export const YouTubeStandaloneIOS = !YouTubeStandalone
   ? null
   : {
-      playVideo: videoId =>
+      playVideo: (videoId,token) =>
         new Promise((resolve, reject) => {
-          YouTubeStandalone.playVideo(videoId)
+          YouTubeStandalone.playVideo({videoId,token})
             .then(() => resolve())
             .catch(errorMessage => reject(errorMessage));
         }),
